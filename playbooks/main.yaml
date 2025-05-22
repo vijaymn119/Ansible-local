@@ -10,11 +10,10 @@
         path: /tmp/redhat-auto
         state: touch
 
-#    - name: Install httpd 
-#      yum:
-#        name: httpd
-#        state: latest
-#      become: true
+    - name: Install httpd 
+      ansible.builtin.dnf:
+        name: httpd
+        state: latest
 
 #    - name: Start Httpd Service
 #      service:
