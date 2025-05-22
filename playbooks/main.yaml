@@ -7,7 +7,7 @@
     
     - name: Create a file
       ansible.builtin.file:
-        path: /opt/redhat-automation
+        path: /tmp/redhat-automation
         state: touch
 
 #    - name: Install httpd 
