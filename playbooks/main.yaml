@@ -1,6 +1,6 @@
 ---
-- name: Create a new file
-  file:
-     path: /opt/redhat-automation
-     state: touch
-     
+- hosts: all
+  tasks:
+    - name: Print message
+      debug:
+        msg: Hello Ansible World
