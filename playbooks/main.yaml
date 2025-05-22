@@ -9,8 +9,10 @@
       yum:
         name: httpd
         state: latest
+      become: true
 
     - name: Start Httpd Service
       service:
         name: httpd
         state: started
+      become: true
